@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="author.css">
+
+<h1> My first Sinatra</h1>
+	<p>
+		<b>Author:</b>
+		Johnny Appleseed
+	<p>
+
+<% if Date.today.tuesday? %>
+  <h1>Welcome page</h1>
+  <%= @greeting %>
+  <strong><%= @time %></strong>
+  <p>
+  	Izzy Ironside is <strong>NOT</strong>
+  	a fan of Mondays like today.
+  </p>
+<% end %>
+
+<img src="/fernando.jpg"
+	alt="A very cool image">

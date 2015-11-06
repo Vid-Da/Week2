@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p> Welcome to our blog: <br> Here you have the list of latest entries</p>
+	<ul>
+		<% @list.each do |post| %>
+			<li><%= post.text %></li>
+			<% end %>
+	</ul>
+	
+	<form action="/latest_posts" method="GET">
+		<button type="submit" name="btn" value="latest_posts">Latest Posts</button>
+	 </form>
+
+</body>
+</html>
